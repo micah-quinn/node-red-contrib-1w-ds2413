@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('1w-ds2413',{
+        category: 'hardware',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"1w-ds2413";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lower-case">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lower-case">
+    <p>A node that reads/writes to a 1-wire DS2413 2-pin GPIO chip</p>
+</script>
